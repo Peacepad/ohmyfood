@@ -17,3 +17,35 @@
     margin-bottom: 30px;
 }
 
+//-----------------------------------------------nav-home--------------------------------
+
+.nav-home {
+    @include flex-column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.nav-home__heading {
+    width: 90%;
+    display: flex;
+}
+
+.nav-home__box {
+    width: 90%;
+    padding-left: 12.5px; //taille de nav number qui dépasse
+    @include flex-column;
+    box-sizing: border-box;
+}
+
+.nav-home__number {
+    height: 25px;
+    width: 25px;
+    background-color: $color-primary;
+    border-radius: 100%;
+    text-align: center;
+    color:white;
+    line-height: 23px;
+    position: absolute;
+    left: -12.5px;
+}
+

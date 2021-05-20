@@ -1,5 +1,6 @@
 .btn {
     @include flex-row;
+    cursor: pointer;
 }
 
 .main-home__btn {
@@ -35,4 +36,36 @@
 
 .main-home__btn:hover::after {
     opacity:1;
+}
+
+
+
+
+//-----------------------------------nav-home__button----------------------
+
+.nav-home__btn {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    height:75px;
+    width: 100%;
+    background-color: $back-color;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    box-shadow: -2px 0px 4px rgba(236, 236, 236, 1), 2px 4px 4px rgba(236, 236, 236, 1);
+    & i {
+        color: #7e7e7e;
+        margin-left: 32.5px;
+        margin-right: 25px;
+    }
+}
+
+.nav-home__btn:hover {
+    background-color: lighten($color-primary,35);
+    & i {
+        color:$color-primary;
+    }
 }
