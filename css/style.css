@@ -7,9 +7,18 @@ header {
   justify-content: center;
   height: 63px;
   align-items: center;
+  position: relative;
 }
 header img {
   height: 30px;
+}
+
+.header__to-home {
+  position: absolute;
+  left: 20px;
+}
+.header__to-home a {
+  color: black;
 }
 
 .search-city {

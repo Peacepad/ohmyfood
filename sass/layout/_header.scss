@@ -3,7 +3,16 @@ header {
     justify-content: center;
     height: 63px;
     align-items: center;
+    position:relative;
     & img {
         height:30px;
+    }
+}
+
+.header__to-home {
+    position: absolute;
+    left:20px;
+    & a {
+        color:black;
     }
 }
