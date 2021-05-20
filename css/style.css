@@ -1,3 +1,7 @@
+body {
+  font-family: "roboto";
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -6,6 +10,37 @@ header {
 }
 header img {
   height: 30px;
+}
+
+.search-city {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: linear-gradient(180deg, #cfcfcf 0%, #f6f6f6 8%);
+}
+
+.search-city i {
+  margin-right: 15px;
+}
+
+.search-city__bar {
+  border: none;
+  background-color: #f6f6f6;
+  height: 45px;
+  font-family: "roboto";
+  font-weight: 700;
+  color: black;
+  font-size: 1em;
+  width: 150px;
+}
+.search-city__bar:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
