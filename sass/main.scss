@@ -1,7 +1,11 @@
 @import "utils/variables";
+@import "utils/mixins";
 @import "base/typography";
 @import "layout/header";
 @import "layout/form";
+@import "pages/homepage";
+@import "components/buttons";
+
 
 
 body {
