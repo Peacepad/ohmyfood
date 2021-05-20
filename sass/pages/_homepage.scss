@@ -49,3 +49,17 @@
     left: -12.5px;
 }
 
+//--------------------------------------------------------article-home-----------------------------
+
+.article-home {
+    @include flex-column;
+    width: 100%;
+    background-color: $back-color;
+    padding-bottom: 50px;
+}
+
+.article-home__heading {
+    width: 90%;
+
+}
+
