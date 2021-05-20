@@ -265,6 +265,40 @@ header img {
     opacity: 1;
   }
 }
+footer {
+  background-color: #353535;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__box {
+  width: 90%;
+  margin: auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+  width: 90%;
+  margin: auto;
+}
+
+footer i {
+  margin-right: 15px;
+  display: inline-block;
+  width: 15px;
+}
+
 body {
   margin: 0;
 }
