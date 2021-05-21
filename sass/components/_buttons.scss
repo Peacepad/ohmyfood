@@ -3,7 +3,7 @@
     cursor: pointer;
 }
 
-.main-home__btn {
+.awesome-btn {
     height: 50px;
     background: linear-gradient(162deg, $color-secondary 0%, $color-primary 76%); //à ajuster
     color:white;
@@ -20,7 +20,7 @@
 }
 
 
-.main-home__btn::after {
+.awesome-btn::after {
     position: absolute;
     content: "";
     left:0;
@@ -34,7 +34,7 @@
     transition: opacity 800ms 100ms;
 }
 
-.main-home__btn:hover::after {
+.awesome-btn:hover::after {
     opacity:1;
 }
 
@@ -68,4 +68,10 @@
     & i {
         color:$color-primary;
     }
+}
+
+//------------------------main-menu_btn
+
+.main-menu_btn {
+    margin-top: 50px;
 }

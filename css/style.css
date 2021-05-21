@@ -2,6 +2,16 @@ body {
   font-family: "roboto";
 }
 
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -124,7 +134,7 @@ header img {
   cursor: pointer;
 }
 
-.main-home__btn {
+.awesome-btn {
   height: 50px;
   background: linear-gradient(162deg, #FF79DA 0%, #9356DC 76%);
   color: white;
@@ -136,11 +146,11 @@ header img {
   position: relative;
   z-index: 1;
 }
-.main-home__btn:hover {
+.awesome-btn:hover {
   transform: scale(1.2);
 }
 
-.main-home__btn::after {
+.awesome-btn::after {
   position: absolute;
   content: "";
   left: 0;
@@ -154,7 +164,7 @@ header img {
   transition: opacity 800ms 100ms;
 }
 
-.main-home__btn:hover::after {
+.awesome-btn:hover::after {
   opacity: 1;
 }
 
@@ -183,6 +193,10 @@ header img {
 }
 .nav-home__btn:hover i {
   color: #9356DC;
+}
+
+.main-menu_btn {
+  margin-top: 50px;
 }
 
 .card {
@@ -317,6 +331,79 @@ footer i {
   height: 100%;
   object-fit: cover;
   object-position: 0% 50%;
+}
+
+.main-menu {
+  position: relative;
+  background-color: #f6f6f6;
+}
+.main-menu__heading {
+  position: absolute;
+  top: -75px;
+  display: flex;
+  width: 100%;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+  height: 75px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.main-menu__heading h1 {
+  width: 90%;
+  margin: auto;
+  font-size: 1.7em;
+  margin-top: 25px;
+}
+
+.main-menu__box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+
+.main-menu__entree, .main-menu__dish, .main-menu__desserts {
+  width: 100%;
+}
+
+.main-menu h2 {
+  position: relative;
+}
+.main-menu h2::after {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background-color: #99E2D0;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.main-menu__choice {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  height: 70px;
+  box-shadow: -2px 0px 4px #ececec, 2px 4px 4px #ececec;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.main-menu h3 {
+  margin: 0;
+}
+
+.main-menu p {
+  margin: 0;
+  margin-top: 5px;
 }
 
 body {
