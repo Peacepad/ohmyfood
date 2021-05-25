@@ -470,6 +470,10 @@ footer i {
   font-weight: 600;
 }
 
+.main-menu__choice--content {
+  width: 85%;
+}
+
 .encoche-verte {
   position: absolute;
   top: 0;
