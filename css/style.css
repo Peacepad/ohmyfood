@@ -18,12 +18,8 @@
   animation-delay: calc(4s + 0.$i);
 }
 
-body {
-  font-family: "roboto";
-}
-
-h1 {
-  font-family: "Shrikhand", sans-serif;
+* {
+  font-family: "roboto", sans-serif;
 }
 
 h2 {
@@ -135,6 +131,7 @@ header img {
 
 .main-home h1 {
   width: 75%;
+  font-family: "roboto";
 }
 
 .main-home p {
@@ -580,7 +577,7 @@ footer i {
   margin: auto;
   background-color: white;
   z-index: 4;
-  animation: disparait 1500ms 4s forwards;
+  animation: disparait 500ms 3.5s forwards;
 }
 
 .bouteille i {
@@ -596,14 +593,14 @@ footer i {
   left: calc(50% - 65px);
   top: calc(50% - 136px);
   transform: rotate(-45deg);
-  animation: bouteille-rotate 2500ms ease-in-out 400ms forwards, disparait 2000ms 3s forwards;
+  animation: bouteille-rotate 2500ms ease-in-out 400ms forwards, disparait 500ms 3s forwards;
 }
 
 .verre {
   position: absolute;
   top: calc(50% - 64px);
   left: calc(50% - 18px);
-  animation: disparait 2000ms 3s forwards;
+  animation: disparait 500ms 3s forwards;
 }
 
 .liquide {
@@ -615,7 +612,7 @@ footer i {
   left: calc(50% - 2px);
   transform-origin: top;
   transform: scaleY(0);
-  animation: liquide-coule 1000ms ease-out 1400ms forwards, disparait 2000ms 3s forwards;
+  animation: liquide-coule 1000ms ease-out 1400ms forwards, disparait 500ms 3s forwards;
 }
 
 .liquide-verre {
@@ -629,7 +626,7 @@ footer i {
   border-bottom-right-radius: 35%;
   transform: scaleY(0);
   transform-origin: bottom;
-  animation: remplir 900ms 1800ms forwards, disparait 2000ms 2.9s forwards;
+  animation: remplir 900ms 1800ms forwards, disparait 500ms 2.9s forwards;
 }
 
 @keyframes bouteille-rotate {

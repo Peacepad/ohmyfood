@@ -5,7 +5,7 @@
     margin: auto;
     background-color: white;
     z-index: 4;
-    animation: disparait 1500ms 4s forwards;
+    animation: disparait 500ms 3.5s forwards;
 }
 
 .bouteille i {
@@ -22,14 +22,14 @@
     top:calc(50% - 136px);
     transform: rotate(-45deg);
     animation: bouteille-rotate 2500ms ease-in-out 400ms forwards,
-    disparait 2000ms 3s forwards;
+    disparait 500ms 3s forwards;
 }
 
 .verre {
     position:absolute;
     top:calc(50% - 64px);
     left:calc(50% - 18px);
-    animation: disparait 2000ms 3s forwards;
+    animation: disparait 500ms 3s forwards;
 }
 
 .liquide {
@@ -42,7 +42,7 @@
     transform-origin: top;
     transform:scaleY(0);
     animation: liquide-coule 1000ms ease-out 1400ms forwards,
-    disparait 2000ms 3s forwards;
+    disparait 500ms 3s forwards;
 }
 
 // .etiquette {
@@ -77,7 +77,7 @@
     transform: scaleY(0);
     transform-origin: bottom;
     animation: remplir 900ms 1800ms forwards,
-    disparait 2000ms 2.9s forwards;
+    disparait 500ms 2.9s forwards;
 }
 
 
