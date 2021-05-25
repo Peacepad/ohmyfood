@@ -45,7 +45,7 @@
     disparait 2000ms 3s forwards;
 }
 
-.etiquette {
+/*.etiquette {
     @include flex-column;
     justify-content: flex-end;
     font-size: 0.5em;
@@ -63,7 +63,7 @@
         width:22px;
         background-color: $color-primary;
     }
-}
+} */
 
 .liquide-verre {
     position:absolute;
@@ -96,7 +96,7 @@
     }
 }
 
-@keyframes etiquette-rotate {
+/* @keyframes etiquette-rotate {
     0% {
         transform: rotate(0deg)
     }
@@ -111,7 +111,7 @@
         transform: rotate(0deg)
     }
 }
-
+*/
 
 @keyframes liquide-coule {
     0% { 
