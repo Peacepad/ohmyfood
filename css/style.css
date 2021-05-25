@@ -550,7 +550,7 @@ footer i {
   left: calc(50% - 2px);
   transform-origin: top;
   transform: scaleY(0);
-  animation: liquide-coule 1000ms ease-out 1700ms forwards, disparait 2000ms 3s forwards;
+  animation: liquide-coule 1000ms ease-out 1400ms forwards, disparait 2000ms 3s forwards;
 }
 
 /*.etiquette {
