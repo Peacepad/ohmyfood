@@ -1,3 +1,23 @@
+.main-menu__choice--1 {
+  animation: apparition 1s;
+  animation-delay: calc(4s + 0.$i);
+}
+
+.main-menu__choice--2 {
+  animation: apparition 1s;
+  animation-delay: calc(4s + 0.$i);
+}
+
+.main-menu__choice--3 {
+  animation: apparition 1s;
+  animation-delay: calc(4s + 0.$i);
+}
+
+.main-menu__choice--4 {
+  animation: apparition 1s;
+  animation-delay: calc(4s + 0.$i);
+}
+
 body {
   font-family: "roboto";
 }
@@ -298,6 +318,16 @@ header img {
     opacity: 1;
   }
 }
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -404,6 +434,7 @@ footer i {
   box-shadow: -2px 0px 4px #ececec, 2px 4px 4px #ececec;
   box-sizing: border-box;
   margin-bottom: 10px;
+  opacity: 0;
 }
 
 .main-menu h3 {
@@ -415,14 +446,64 @@ footer i {
   margin-top: 5px;
 }
 
+.m-1 {
+  animation: apparition 1s forwards;
+  animation-delay: 4.4s;
+}
+
+.m-2 {
+  animation: apparition 1s forwards;
+  animation-delay: 4.5s;
+}
+
+.m-3 {
+  animation: apparition 1s forwards;
+  animation-delay: 4.6s;
+}
+
+.m-4 {
+  animation: apparition 1s forwards;
+  animation-delay: 4.7s;
+}
+
+.m-5 {
+  animation: apparition 1s forwards;
+  animation-delay: 4.8s;
+}
+
+.m-6 {
+  animation: apparition 1s forwards;
+  animation-delay: 4.9s;
+}
+
+.m-7 {
+  animation: apparition 1s forwards;
+  animation-delay: 5s;
+}
+
+.m-8 {
+  animation: apparition 1s forwards;
+  animation-delay: 5.1s;
+}
+
+.m-9 {
+  animation: apparition 1s forwards;
+  animation-delay: 5.2s;
+}
+
+.m-10 {
+  animation: apparition 1s forwards;
+  animation-delay: 5.3s;
+}
+
 .animation_box {
   height: 100vh;
   position: fixed;
   width: 100vw;
   margin: auto;
-  background-color: black;
+  background-color: white;
   z-index: 4;
-  animation: disparait 2000ms 4s forwards;
+  animation: disparait 1500ms 4s forwards;
 }
 
 .bouteille i {
@@ -438,14 +519,14 @@ footer i {
   left: calc(50% - 65px);
   top: calc(50% - 136px);
   transform: rotate(-45deg);
-  animation: bouteille-rotate 4000ms 400ms forwards, disparait 2000ms 4s forwards;
+  animation: bouteille-rotate 2500ms ease-in-out 400ms forwards, disparait 2000ms 3s forwards;
 }
 
 .verre {
   position: absolute;
   top: calc(50% - 64px);
   left: calc(50% - 18px);
-  animation: disparait 2000ms 4s forwards;
+  animation: disparait 2000ms 3s forwards;
 }
 
 .liquide {
@@ -457,7 +538,7 @@ footer i {
   left: calc(50% - 2px);
   transform-origin: top;
   transform: scaleY(0);
-  animation: liquide-coule 2500ms 2200ms forwards, disparait 2000ms 4s forwards;
+  animation: liquide-coule 1000ms ease-out 1700ms forwards, disparait 2000ms 3s forwards;
 }
 
 .etiquette {
@@ -473,7 +554,7 @@ footer i {
   left: calc(50% - 45px);
   top: calc(50% - 140px);
   padding-bottom: 5px;
-  animation: etiquette-rotate 4000ms 400ms forwards, disparait 2000ms 4s forwards;
+  animation: etiquette-rotate 2500ms ease-in-out 400ms forwards, disparait 2000ms 3s forwards;
 }
 .etiquette__background {
   height: 40px;
@@ -492,7 +573,7 @@ footer i {
   border-bottom-right-radius: 35%;
   transform: scaleY(0);
   transform-origin: bottom;
-  animation: remplir 900ms 2900ms forwards, disparait 2000ms 4s forwards;
+  animation: remplir 900ms 1800ms forwards, disparait 2000ms 2.9s forwards;
 }
 
 @keyframes bouteille-rotate {
