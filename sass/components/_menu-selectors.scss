@@ -76,7 +76,7 @@
 @for $i from 1 through 10 {
     .m-#{$i} {
         animation: apparition 1s forwards;
-        animation-delay: 4.3s + ($i * 100ms);
+        animation-delay: 3.3s + ($i * 100ms);
     }
 };
 

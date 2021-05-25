@@ -113,7 +113,7 @@ header img {
   font-weight: 700;
   color: black;
   font-size: 1em;
-  width: 150px;
+  width: 120px;
 }
 .search-city__bar:focus {
   outline: none;
@@ -510,52 +510,52 @@ footer i {
 
 .m-1 {
   animation: apparition 1s forwards;
-  animation-delay: 4.4s;
+  animation-delay: 3.4s;
 }
 
 .m-2 {
   animation: apparition 1s forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3.5s;
 }
 
 .m-3 {
   animation: apparition 1s forwards;
-  animation-delay: 4.6s;
+  animation-delay: 3.6s;
 }
 
 .m-4 {
   animation: apparition 1s forwards;
-  animation-delay: 4.7s;
+  animation-delay: 3.7s;
 }
 
 .m-5 {
   animation: apparition 1s forwards;
-  animation-delay: 4.8s;
+  animation-delay: 3.8s;
 }
 
 .m-6 {
   animation: apparition 1s forwards;
-  animation-delay: 4.9s;
+  animation-delay: 3.9s;
 }
 
 .m-7 {
   animation: apparition 1s forwards;
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
 .m-8 {
   animation: apparition 1s forwards;
-  animation-delay: 5.1s;
+  animation-delay: 4.1s;
 }
 
 .m-9 {
   animation: apparition 1s forwards;
-  animation-delay: 5.2s;
+  animation-delay: 4.2s;
 }
 
 .m-10 {
   animation: apparition 1s forwards;
-  animation-delay: 5.3s;
+  animation-delay: 4.3s;
 }
 
 .main-menu .like {
