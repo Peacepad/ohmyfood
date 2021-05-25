@@ -30,3 +30,11 @@
         animation-delay: 4.3s + ($i * 100ms);
     }
 };
+
+.main-menu .like {
+    @include coeur(40px, 28px, 1.7em);
+};
+
+.main-menu .like--checked {
+    @include coeur(39px, 27px, 1.8em);
+};

@@ -271,7 +271,7 @@ header img {
   box-shadow: -4px 0px 2px rgba(153, 226, 208, 0.4);
 }
 
-.card__like {
+.like {
   position: absolute;
   right: 20px;
   top: 10px;
@@ -280,16 +280,16 @@ header img {
   z-index: 1;
   transform: scale(1);
 }
-.card__like:hover {
+.like:hover {
   animation: aime 1s;
   animation-fill-mode: both;
 }
-.card__like:hover + .card__like--checked {
+.like:hover + .like--checked {
   animation: aime2 1000ms forwards;
   animation-delay: 500ms;
 }
 
-.card__like--checked {
+.like--checked {
   color: #FF79DA;
   position: absolute;
   right: 19px;
@@ -494,6 +494,18 @@ footer i {
 .m-10 {
   animation: apparition 1s forwards;
   animation-delay: 5.3s;
+}
+
+.main-menu .like {
+  right: 40px;
+  top: 28px;
+  font-size: 1.7em;
+}
+
+.main-menu .like--checked {
+  right: 39px;
+  top: 27px;
+  font-size: 1.8em;
 }
 
 .animation_box {

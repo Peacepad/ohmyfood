@@ -10,3 +10,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin coeur($coeur-right:20px, $coeur-top:10px, $coeur-size:1.4em) {
+    right: $coeur-right;
+    top: $coeur-top;
+    font-size: $coeur-size;
+}

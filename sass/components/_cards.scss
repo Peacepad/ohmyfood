@@ -40,12 +40,15 @@
     box-shadow: -4px 0px 2px rgba($color-tertiary ,0.4);
 }
 
+@mixin coeur($coeur-right:20px, $coeur-top:10px, $coeur-size:1.4em) {
+    right: $coeur-right;
+    top: $coeur-top;
+    font-size: $coeur-size;
+}
 
-.card__like {
+.like {
     position: absolute;
-    right:20px;
-    top:10px;
-    font-size: 1.4em;
+    @include coeur;
     cursor:pointer;
     z-index:1;
     transform: scale(1);
@@ -53,18 +56,16 @@
         animation: aime 1s;
         animation-fill-mode: both;
     }
-    &:hover+ .card__like--checked{
+    &:hover+ .like--checked{
             animation: aime2 1000ms forwards;
             animation-delay: 500ms;
         }
 }
 
-.card__like--checked {
+.like--checked {
     color: $color-secondary;
     position: absolute;
-    right:19px;
-    top:9px;
-    font-size: 1.5em;
+    @include coeur(19px, 9px, 1.5em);
     z-index:0;
     opacity:0;
 }
