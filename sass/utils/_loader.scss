@@ -45,25 +45,25 @@
     disparait 2000ms 3s forwards;
 }
 
-/*.etiquette {
-    @include flex-column;
-    justify-content: flex-end;
-    font-size: 0.5em;
-    text-align: center;
-    position: absolute;
-    height: 69px;
-    width: 20px;
-    left:calc(50% - 45px);
-    top:calc(50% - 140px);
-    padding-bottom: 5px;
-    animation: etiquette-rotate $vitesse-bouteille ease-in-out 400ms forwards,
-    disparait 2000ms 3s forwards;
-    &__background{
-        height:40px;
-        width:22px;
-        background-color: $color-primary;
-    }
-} */
+// .etiquette {
+//     @include flex-column;
+//     justify-content: flex-end;
+//     font-size: 0.5em;
+//     text-align: center;
+//     position: absolute;
+//     height: 69px;
+//     width: 20px;
+//     left:calc(50% - 45px);
+//     top:calc(50% - 140px);
+//     padding-bottom: 5px;
+//     animation: etiquette-rotate $vitesse-bouteille ease-in-out 400ms forwards,
+//     disparait 2000ms 3s forwards;
+//     &__background{
+//         height:40px;
+//         width:22px;
+//         background-color: $color-primary;
+//     }
+// } 
 
 .liquide-verre {
     position:absolute;
@@ -96,7 +96,7 @@
     }
 }
 
-/* @keyframes etiquette-rotate {
+@keyframes etiquette-rotate {
     0% {
         transform: rotate(0deg)
     }
@@ -111,7 +111,7 @@
         transform: rotate(0deg)
     }
 }
-*/
+
 
 @keyframes liquide-coule {
     0% { 
@@ -148,7 +148,6 @@
         opacity:0;
     }
 }
-
 
 
 
