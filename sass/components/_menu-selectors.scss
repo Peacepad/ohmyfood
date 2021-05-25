@@ -6,23 +6,72 @@
     justify-content: space-between;
     align-items: flex-end;
     padding:10px;
+    padding-right: 20px;
     height: 70px;
     box-shadow: -2px 0px 4px rgba(236, 236, 236, 1), 2px 4px 4px rgba(236, 236, 236, 1);
     box-sizing: border-box;
     margin-bottom: 10px ;
-
+    position:relative;
+    transition: padding 200ms;
+    overflow: hidden;
+    cursor: pointer;
     opacity:0;
 }
 
 .main-menu h3 {
     margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
 }
 
 .main-menu p {
     margin:0;
     margin-top: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
 }
 
+.main-menu__choice--price {
+    font-weight: 600;
+}
+
+.encoche-verte {
+    position: absolute;
+    top:0;
+    right:-59px;
+    height:70px;
+    @include flex-row;
+    width:59px;
+    background-color: $color-tertiary;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color:white;
+    font-size: 1.4em;
+    
+    transform-origin: right;
+    transition: transform 400ms;
+}
+
+.main-menu__choice i {
+    display: block;
+    transform: rotate(-90deg);
+    transition: transform 400ms 0.1s;
+}
+
+.main-menu__choice:hover {
+    padding-right: 65px;
+    & .encoche-verte {
+        transform:translateX(-59px);
+    }
+    .main-menu__choice--content {
+        width: 70%;
+    }
+    & i {
+        transform: rotate(360deg);
+    }
+}
 
 @for $i from 1 through 10 {
     .m-#{$i} {
