@@ -10,6 +10,8 @@
     box-shadow: -2px 0px 4px rgba(236, 236, 236, 1), 2px 4px 4px rgba(236, 236, 236, 1);
     box-sizing: border-box;
     margin-bottom: 10px ;
+
+    opacity:0;
 }
 
 .main-menu h3 {
@@ -19,5 +21,12 @@
 .main-menu p {
     margin:0;
     margin-top: 5px;
-
 }
+
+
+@for $i from 1 through 10 {
+    .m-#{$i} {
+        animation: apparition 1s forwards;
+        animation-delay: 4.3s + ($i * 100ms);
+    }
+};
