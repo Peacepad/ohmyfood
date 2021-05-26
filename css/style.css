@@ -241,7 +241,7 @@ header img {
 }
 
 .nav-home__btn {
-  cursor: pointer;
+  cursor: auto;
   display: flex;
   position: relative;
   justify-content: left;
