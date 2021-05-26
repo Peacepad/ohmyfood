@@ -28,6 +28,10 @@ h2 {
   font-size: 1.2em;
 }
 
+.main-menu h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -117,7 +121,7 @@ header img {
   font-weight: 700;
   color: black;
   font-size: 1em;
-  width: 120px;
+  width: 130px;
   text-align: center;
 }
 .search-city__bar:focus {
@@ -167,6 +171,13 @@ header img {
   align-items: center;
   box-sizing: border-box;
 }
+@media screen and (min-width: 992px) {
+  .nav-home__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .nav-home__number {
   height: 25px;
@@ -188,6 +199,13 @@ header img {
   background-color: #f6f6f6;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 992px) {
+  .article-home {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 
 .article-home__heading {
   width: 90%;
@@ -208,7 +226,7 @@ header img {
   color: white;
   border-radius: 25px;
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 200ms cubic-bezier(0.39, -0.48, 0.41, 1.57);
   position: relative;
   z-index: 1;
 }
@@ -254,6 +272,16 @@ header img {
   margin-bottom: 20px;
   box-shadow: -2px 0px 4px #ececec, 2px 4px 4px #ececec;
 }
+@media screen and (min-width: 576px) {
+  .nav-home__btn {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav-home__btn {
+    width: 30%;
+  }
+}
 .nav-home__btn i {
   color: #7e7e7e;
   margin-left: 32.5px;
@@ -279,6 +307,20 @@ header img {
   box-shadow: -2px 0px 4px #ececec, 2px 4px 4px #ececec;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 576px) {
+  .card {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 40%;
+    transition: transform 400ms cubic-bezier(0.39, -0.48, 0.41, 1.57);
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
 
 .card__content {
   padding-left: 12px;
@@ -299,6 +341,11 @@ header img {
   object-position: 0 60%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+@media screen and (min-width: 576px) {
+  .card__img-box img {
+    height: 190px;
+  }
 }
 
 .card__img-box {
@@ -357,11 +404,18 @@ footer a {
 .footer__box {
   width: 90%;
   margin: auto;
+  max-width: 1080px;
 }
 
 footer ul {
   list-style: none;
   padding: 0;
+}
+@media screen and (min-width: 576px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 footer li {
@@ -384,11 +438,33 @@ footer i {
 .menu-image {
   width: 100%;
   height: 250px;
+  position: relative;
+}
+@media screen and (min-width: 576px) {
+  .menu-image {
+    height: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-image {
+    height: 400px;
+  }
 }
 .menu-image img {
   width: 100%;
   object-fit: cover;
   height: 200px;
+}
+@media screen and (min-width: 576px) {
+  .menu-image img {
+    height: 350px;
+    object-position: 50% 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-image img {
+    height: 400px;
+  }
 }
 
 .main-menu {
@@ -412,6 +488,12 @@ footer i {
   font-size: 1.7em;
   margin-top: 25px;
 }
+@media screen and (min-width: 992px) {
+  .main-menu {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 .main-menu__box {
   width: 90%;
@@ -422,9 +504,22 @@ footer i {
   padding-top: 15px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 992px) {
+  .main-menu__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 98%;
+  }
+}
 
 .main-menu__entree, .main-menu__dish, .main-menu__desserts {
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .main-menu__entree, .main-menu__dish, .main-menu__desserts {
+    width: calc(100%/3);
+  }
 }
 
 .main-menu h2 {
@@ -459,6 +554,11 @@ footer i {
   overflow: hidden;
   cursor: pointer;
   opacity: 0;
+}
+@media screen and (min-width: 992px) {
+  .main-menu__choice {
+    width: 90%;
+  }
 }
 
 .main-menu h3 {

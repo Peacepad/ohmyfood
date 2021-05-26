@@ -10,7 +10,7 @@
     color:white;
     border-radius: 25px;
     transform: scale(1);
-    transition: transform 200ms;
+    transition: transform 200ms cubic-bezier(.39,-0.48,.41,1.57);
     position: relative;
     z-index:1;
     &:hover {
@@ -49,13 +49,19 @@
 //-----------------------------------nav-home__button----------------------
 
 .nav-home__btn {
-    cursor:auto;
+    cursor: default;
     display: flex;
     position: relative;
     justify-content: left;
     align-items: center;
     height:75px;
     width: 100%;
+    @media screen and (min-width: 576px){
+        width: 80%;
+    }
+    @media screen and (min-width: 992px){
+        width: 30%;
+    }
     background-color: $back-color;
     border-radius: 15px;
     font-weight: 500;
