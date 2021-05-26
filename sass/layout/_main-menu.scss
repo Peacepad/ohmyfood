@@ -18,6 +18,10 @@
             margin-top: 25px;
         }
     }
+    @media screen and (min-width: 992px){
+        width: 90%;
+        margin: auto;
+    }
 }
 
 .main-menu__box {
@@ -26,10 +30,19 @@
     margin: auto;
     padding-top: 15px;
     padding-bottom: 60px;
+    @media screen and (min-width: 992px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 98%;
+    }
 }
 
 .main-menu__entree, .main-menu__dish, .main-menu__desserts {
     width: 100%;
+    @media screen and (min-width: 992px){
+        width: calc(100%/3);
+    }
 }
 
 .main-menu h2 { //Le petit soulignement vert

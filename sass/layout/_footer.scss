@@ -11,11 +11,17 @@ footer {
 .footer__box {
     width: 90%;
     margin:auto;
+    max-width: 1080px;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
+    @media screen and (min-width: 576px){
+        display:flex;
+        justify-content: space-between;
+        
+    }
 }
 
 footer li {
