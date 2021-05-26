@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+.main-menu__heading h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 .like {
   position: absolute;
   right: 20px;
@@ -200,6 +204,7 @@ header img {
 .awesome-btn {
   height: 50px;
   background: linear-gradient(162deg, #FF79DA 0%, #9356DC 76%);
+  box-shadow: -2px 0px 4px #bebebe, 2px 4px 4px #bebebe;
   color: white;
   border-radius: 25px;
   transform: scale(1);
@@ -219,6 +224,7 @@ header img {
   right: 0;
   bottom: 0;
   background: linear-gradient(162deg, #e872da 0%, #a75ddb 94%);
+  box-shadow: -3px 1px 4px #bebebe, 3px 5px 4px #bebebe;
   border-radius: 25px;
   z-index: -1;
   opacity: 0;
