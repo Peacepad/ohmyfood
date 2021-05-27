@@ -801,24 +801,24 @@ footer i {
 }
 @keyframes goutte {
   48% {
-    transform: translate(0px, -59px);
+    transform: translate(3.6px, -59px);
   }
   49% {
-    transform: translate(0px, -60px);
+    transform: translate(4px, -60px);
   }
   50% {
-    transform: translate(0px, -3559) scale(1, 1);
+    transform: translate(4.4px, -3559) scale(1, 1);
   }
   51% {
-    transform: translate(0px, -58px) scale(0.5, 2);
+    transform: translate(4.8px, -58px) scale(0.5, 2);
   }
   75% {
-    transform: translate(0px, 15px) scale(1, 1);
+    transform: translate(8px, 15px) scale(1, 1);
     z-index: 2;
     opacity: 1;
   }
   100% {
-    transform: translate(0px, 16px) scale(2, 0.5);
+    transform: translate(8px, 16px) scale(2, 0.5);
     z-index: -2;
     opacity: 0;
   }
