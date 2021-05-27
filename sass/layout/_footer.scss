@@ -1,42 +1,41 @@
 footer {
-    background-color: #353535;
-    color:white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    & a {
-        color:white;
-    }
+  background-color: #353535;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  & a {
+    color: white;
+  }
 }
 
 .footer__box {
-    width: 90%;
-    margin:auto;
-    max-width: 1080px;
+  width: 90%;
+  margin: auto;
+  max-width: 1080px;
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
-    @media screen and (min-width: 576px){
-        display:flex;
-        justify-content: space-between;
-        
-    }
+  list-style: none;
+  padding: 0;
+  @media screen and (min-width: 576px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 footer li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer__logo {
-    font-family: "Shrikhand", sans-serif;
-    font-size: 1.5em;
-    width: 90%;
-    margin: auto;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+  width: 90%;
+  margin: auto;
 }
 
 footer i {
-    margin-right: 15px;
-    display: inline-block;
-    width: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  width: 15px;
 }

@@ -1,153 +1,152 @@
 .animation_box {
-    height:100vh;
-    position:fixed;
-    width: 100vw;
-    margin: auto;
-    background-color: white;
-    z-index: 4;
-    animation: disparait 500ms 3.5s forwards;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  margin: auto;
+  background-color: white;
+  z-index: 4;
+  animation: disparait 500ms 3s forwards;
 }
 
 .bouteille i {
-    color: $color-primary;
+  color: $color-primary;
 }
 
 .verre i {
-    color: $color-tertiary;
+  color: $color-tertiary;
 }
 
 .bouteille {
-    position:absolute;
-    left:calc(50% - 65px);
-    top:calc(50% - 136px);
-    transform: rotate(-45deg);
-    animation: bouteille-rotate 2500ms ease-in-out 400ms forwards,
-    disparait 500ms 3s forwards;
+  position: absolute;
+  left: calc(50% - 65px);
+  top: calc(50% - 136px);
+  transform: rotate(-45deg);
+  animation: bouteille-rotate 2500ms ease-in-out forwards,
+    disparait 500ms 2.6s forwards;
 }
 
 .verre {
-    position:absolute;
-    top:calc(50% - 64px);
-    left:calc(50% - 18px);
-    animation: disparait 500ms 3s forwards;
+  position: absolute;
+  top: calc(50% - 64px);
+  left: calc(50% - 18px);
+  animation: disparait 500ms 2.6s forwards;
 }
 
 .liquide {
-    position:absolute;
-    width:4px;
-    height:60px;
-    background-color: $color-secondary;
-    top: calc(50% - 64px - 60px);
-    left: calc(50% - 2px);
-    transform-origin: top;
-    transform:scaleY(0);
-    animation: liquide-coule 1000ms ease-out 1400ms forwards,
-    disparait 500ms 3s forwards;
+  position: absolute;
+  width: 4px;
+  height: 60px;
+  background-color: $color-secondary;
+  top: calc(50% - 64px - 60px);
+  left: calc(50% - 2px);
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: liquide-coule 1000ms ease-out 1000ms forwards,
+    disparait 500ms 2.6s forwards;
 }
 
-// .etiquette {
-//     @include flex-column;
-//     justify-content: flex-end;
-//     font-size: 0.5em;
-//     text-align: center;
-//     position: absolute;
-//     height: 69px;
-//     width: 20px;
-//     left:calc(50% - 45px);
-//     top:calc(50% - 140px);
-//     padding-bottom: 5px;
-//     animation: etiquette-rotate $vitesse-bouteille ease-in-out 400ms forwards,
-//     disparait 2000ms 3s forwards;
-//     &__background{
-//         height:40px;
-//         width:22px;
-//         background-color: $color-primary;
-//     }
-// } 
+.goutte {
+  position: absolute;
+  background-color: $color-secondary;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  top: calc(50% - 20px);
+  left: 50%;
+  opacity: 0;
+  animation: goutte 500ms 1600ms forwards;
+}
 
 .liquide-verre {
-    position:absolute;
-    background-color: $color-secondary;
-    height:30px;
-    width:25px;
-    top:calc(50% - 60px);
-    left: calc(50% - 12.5px);
-    border-bottom-left-radius: 35%;
-    border-bottom-right-radius: 35%;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    animation: remplir 900ms 1800ms forwards,
-    disparait 500ms 2.9s forwards;
+  position: absolute;
+  background-color: $color-secondary;
+  height: 30px;
+  width: 25px;
+  top: calc(50% - 60px);
+  left: calc(50% - 12.5px);
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  animation: remplir 900ms 1400ms forwards, disparait 500ms 2.6s forwards;
 }
-
 
 @keyframes bouteille-rotate {
-    0% {
-        transform: rotate(-45deg)
-    }
-    40% {
-        transform: rotate(0deg)
-    }
-    80% {
-        transform: rotate(0deg)
-    }
-    100% {
-        transform: rotate(-45deg)
-    }
+  0% {
+    transform: rotate(-45deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }
 
-@keyframes etiquette-rotate {
-    0% {
-        transform: rotate(0deg)
-    }
-    40% {
-        transform: rotate(45deg)
-    }
-
-    80% {
-        transform: rotate(45deg)
-    }
-    100% {
-        transform: rotate(0deg)
-    }
+@keyframes goutte {
+  0% {
+    
+  }
+  48% {
+    transform: translate($random * 0.9px, -59px); //translate(x,y) montée
+  }
+  49% {
+    transform: translate($random * 1px, -60px); //montée
+  }
+  50% {
+    transform: translate($random * 1.1px, -3559) scale(1, 1); //tout en haut
+  }
+  51% {
+    transform: translate($random * 1.2px, -58px) scale(0.5, 2); //descente
+  }
+  75% {
+    transform: translate($random * 2px, 15px) scale(1, 1);
+    z-index: 2;
+    opacity: 1;
+  }
+  100% {
+    transform: translate($random * 2px, 16px) scale(2, 0.5);
+    z-index: -2;
+    opacity: 0;
+  }
 }
-
 
 @keyframes liquide-coule {
-    0% { 
-        transform:scaleY(0);
-    }
+  0% {
+    transform: scaleY(0);
+  }
 
-    50% {
-        transform: scaleY(1);
-        opacity: 1;
-    }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 
-    100% {
-        transform-origin: bottom;
-        opacity: 0;
-    }
+  100% {
+    transform-origin: bottom;
+    opacity: 0;
+  }
 }
 
 @keyframes remplir {
-    from {}
-    to {
-        transform:scaleY(1)
-    }
+  from {
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 @keyframes disparait {
-    0% {
-        opacity:1
-    }
-    95% {
-        opacity:0;
-    }
-    100% {
-        z-index:-2;
-        opacity:0;
-    }
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -2;
+    opacity: 0;
+  }
 }
-
-
-

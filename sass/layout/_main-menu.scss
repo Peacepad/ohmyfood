@@ -18,13 +18,13 @@
     font-size: 1.7em;
     margin-top: 25px;
     @media screen and (min-width: 992px) {
-      width: 98%;
-      margin: auto;
+      width: 95%;
+      margin-top: 25px;
     }
   }
 
   @media screen and (min-width: 992px) {
-    width: 98%;
+    width: 90%;
     margin: auto;
   }
 }
@@ -39,7 +39,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 98%;
+    align-items: flex-start;
+    width: 95%;
   }
 }
 
@@ -48,7 +49,8 @@
 .main-menu__desserts {
   width: 100%;
   @media screen and (min-width: 992px) {
-    width: calc(100% / 3);
+    width: calc(30%);
+    justify-content: space-between;
   }
 }
 

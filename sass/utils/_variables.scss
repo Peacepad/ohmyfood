@@ -1,16 +1,13 @@
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 $back-color: #f6f6f6;
 
-
-
+$random: random(17) - random(17);
 
 @for $i from 1 through 4 {
-    .main-menu__choice--#{$i} {
-        animation: apparition 1s;
-        animation-delay: calc(4s + 0.$i);
-    }
+  .main-menu__choice--#{$i} {
+    animation: apparition 1s;
+    animation-delay: calc(4s + 0$i);
+  }
 }
-
