@@ -1,33 +1,31 @@
 .like {
-    position: absolute;
-    @include coeur;
-    cursor:pointer;
-    z-index:1;
-    transform: scale(1);
-    &:hover {
-        animation: aime 500ms;
-        animation-fill-mode: both;
-    }
-    &:hover+ .like--checked{
-            animation: aime2 500ms forwards;
-            animation-delay: 250ms;
-        }
+  position: absolute;
+  @include coeur;
+  cursor: pointer;
+  z-index: 1;
+  transform: scale(1);
+  &:hover {
+    animation: aime 500ms;
+    animation-fill-mode: both;
+  }
+  &:hover + .like--checked {
+    animation: aime2 500ms forwards;
+    animation-delay: 250ms;
+  }
 }
 
 .like--checked {
-    color: $color-secondary;
-    position: absolute;
-    @include coeur(19px, 9px, 1.5em);
-    z-index:0;
-    opacity:0;
+  color: $color-secondary;
+  position: absolute;
+  @include coeur(19px, 9px, 1.5em);
+  z-index: 0;
+  opacity: 0;
 }
 
-
 .main-menu .like {
-    @include coeur(30px,30px, 1.4em)
- }
- 
- .main-menu .like--checked {
-     @include coeur(29px,29px, 1.5em)
-  }
-  
+  @include coeur(2px, 30px, 1.4em);
+}
+
+.main-menu .like--checked {
+  @include coeur(29px, 29px, 1.5em);
+}

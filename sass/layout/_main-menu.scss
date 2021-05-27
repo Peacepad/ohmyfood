@@ -1,61 +1,68 @@
 .main-menu {
-    position: relative;
+  position: relative;
+  background-color: $back-color;
+  &__heading {
+    position: absolute;
+    top: -75px;
+    display: flex;
+    width: 100%;
     background-color: $back-color;
-    &__heading {
-        position:absolute;
-        top:-75px;
-        display:flex;
-        width:100%;
-        background-color: $back-color;
-        box-sizing: border-box;
-        height: 75px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        & h1 {
-            width: 90%;
-            margin:auto;
-            font-size: 1.7em;
-            margin-top: 25px;
-        }
+    box-sizing: border-box;
+    height: 75px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  & h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 1.7em;
+    margin-top: 25px;
+    @media screen and (min-width: 992px) {
+      width: 98%;
+      margin: auto;
     }
-    @media screen and (min-width: 992px){
-        width: 90%;
-        margin: auto;
-    }
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 98%;
+    margin: auto;
+  }
 }
 
 .main-menu__box {
-    width: 90%;
-    @include flex-column;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 992px){
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 98%;
-    }
+  width: 90%;
+  @include flex-column;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 98%;
+  }
 }
 
-.main-menu__entree, .main-menu__dish, .main-menu__desserts {
-    width: 100%;
-    @media screen and (min-width: 992px){
-        width: calc(100%/3);
-    }
+.main-menu__entree,
+.main-menu__dish,
+.main-menu__desserts {
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    width: calc(100% / 3);
+  }
 }
 
-.main-menu h2 { //Le petit soulignement vert
-    position:relative;
-    &::after {
-        content: "";
-        width: 48px;
-        height: 3px;
-        background-color: $color-tertiary;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-    }
+.main-menu h2 {
+  //Le petit soulignement vert
+  position: relative;
+  &::after {
+    content: "";
+    width: 48px;
+    height: 3px;
+    background-color: $color-tertiary;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+  }
 }
-

@@ -23,6 +23,11 @@
 }
 
 h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.main-menu h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.2em;
@@ -39,6 +44,20 @@ a {
 
 .main-menu__heading h1 {
   font-family: "Shrikhand", sans-serif;
+}
+
+.main-home h1 {
+  width: 75%;
+  font-family: "roboto";
+  font-size: 1.7em;
+}
+
+.main-home p {
+  width: 80%;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 .like {
@@ -70,7 +89,7 @@ a {
 }
 
 .main-menu .like {
-  right: 30px;
+  right: 2px;
   top: 30px;
   font-size: 1.4em;
 }
@@ -106,7 +125,7 @@ header img {
   justify-content: center;
   align-items: center;
   height: 50px;
-  background: linear-gradient(180deg, #cfcfcf 0%, #f6f6f6 8%);
+  background: linear-gradient(180deg, #cfcfcf 0%, #e9e9e9 8%);
 }
 
 .search-city i {
@@ -115,7 +134,7 @@ header img {
 
 .search-city__bar {
   border: none;
-  background-color: #f6f6f6;
+  background-color: #e9e9e9;
   height: 45px;
   font-family: "roboto";
   font-weight: 700;
@@ -138,24 +157,13 @@ header img {
   background-color: #f6f6f6;
 }
 
-.main-home h1 {
-  width: 75%;
-  font-family: "roboto";
-}
-
-.main-home p {
-  width: 80%;
-  margin-top: 0;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
 .nav-home {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin-bottom: 40px;
+  padding-top: 30px;
 }
 
 .nav-home__heading {
@@ -166,6 +174,7 @@ header img {
 .nav-home__box {
   width: 90%;
   padding-left: 12.5px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,6 +207,7 @@ header img {
   width: 100%;
   background-color: #f6f6f6;
   padding-bottom: 50px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 992px) {
   .article-home {
@@ -259,7 +269,7 @@ header img {
 }
 
 .nav-home__btn {
-  cursor: auto;
+  cursor: default;
   display: flex;
   position: relative;
   justify-content: left;
@@ -269,7 +279,7 @@ header img {
   background-color: #f6f6f6;
   border-radius: 15px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   box-shadow: -2px 0px 4px #ececec, 2px 4px 4px #ececec;
 }
 @media screen and (min-width: 576px) {
@@ -315,6 +325,7 @@ header img {
 @media screen and (min-width: 992px) {
   .card {
     width: 40%;
+    margin-bottom: 40px;
     transition: transform 400ms cubic-bezier(0.39, -0.48, 0.41, 1.57);
   }
   .card:hover {
@@ -347,6 +358,11 @@ header img {
     height: 190px;
   }
 }
+@media screen and (min-width: 992px) {
+  .card__img-box img {
+    height: 240px;
+  }
+}
 
 .card__img-box {
   position: relative;
@@ -360,6 +376,7 @@ header img {
   background-color: #99E2D0;
   color: #278870;
   box-shadow: -4px 0px 2px rgba(153, 226, 208, 0.4);
+  border-radius: 3px;
 }
 
 @keyframes aime {
@@ -482,15 +499,21 @@ footer i {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-.main-menu__heading h1 {
+.main-menu h1 {
   width: 90%;
   margin: auto;
   font-size: 1.7em;
   margin-top: 25px;
 }
 @media screen and (min-width: 992px) {
+  .main-menu h1 {
+    width: 98%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 992px) {
   .main-menu {
-    width: 90%;
+    width: 98%;
     margin: auto;
   }
 }
@@ -513,12 +536,16 @@ footer i {
   }
 }
 
-.main-menu__entree, .main-menu__dish, .main-menu__desserts {
+.main-menu__entree,
+.main-menu__dish,
+.main-menu__desserts {
   width: 100%;
 }
 @media screen and (min-width: 992px) {
-  .main-menu__entree, .main-menu__dish, .main-menu__desserts {
-    width: calc(100%/3);
+  .main-menu__entree,
+.main-menu__dish,
+.main-menu__desserts {
+    width: calc(100% / 3);
   }
 }
 
@@ -558,6 +585,7 @@ footer i {
 @media screen and (min-width: 992px) {
   .main-menu__choice {
     width: 90%;
+    margin-top: 30px;
   }
 }
 
@@ -673,13 +701,13 @@ footer i {
 }
 
 .main-menu .like {
-  right: 40px;
+  right: 5%;
   top: 28px;
   font-size: 1.7em;
 }
 
 .main-menu .like--checked {
-  right: 39px;
+  right: 5%;
   top: 27px;
   font-size: 1.8em;
 }

@@ -1,77 +1,65 @@
 .main-home {
-    @include flex-column;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    background-color: $back-color;
-}
-
-.main-home h1 {
-    width: 75%;
-    font-family: "roboto";
-}
-
-.main-home p {
-    width: 80%;
-    margin-top:0;
-    font-weight: 300;
-    margin-bottom: 30px;
+  @include flex-column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: $back-color;
 }
 
 //-----------------------------------------------nav-home--------------------------------
 
 .nav-home {
-    @include flex-column;
-    width: 100%;
-    margin-bottom: 40px;
+  @include flex-column;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-top: 30px;
 }
 
 .nav-home__heading {
-    width: 90%;
-    display: flex;
+  width: 90%;
+  display: flex;
 }
 
 .nav-home__box {
-    width: 90%;
-    padding-left: 12.5px; //taille de nav number qui dépasse
-    @include flex-column;
-    @media screen and (min-width: 992px){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    box-sizing: border-box;
+  width: 90%;
+  padding-left: 12.5px; //taille de nav number qui dépasse
+  padding-top: 20px;
+  @include flex-column;
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  box-sizing: border-box;
 }
 
 .nav-home__number {
-    height: 25px;
-    width: 25px;
-    background-color: $color-primary;
-    border-radius: 100%;
-    text-align: center;
-    color:white;
-    line-height: 23px;
-    position: absolute;
-    left: -12.5px;
+  height: 25px;
+  width: 25px;
+  background-color: $color-primary;
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  line-height: 23px;
+  position: absolute;
+  left: -12.5px;
 }
 
 //--------------------------------------------------------article-home-----------------------------
 
 .article-home {
-    @include flex-column;
-    width: 100%;
-    background-color: $back-color;
-    padding-bottom: 50px;
-    @media screen and (min-width: 992px){
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-    
+  @include flex-column;
+  width: 100%;
+  background-color: $back-color;
+  padding-bottom: 50px;
+  padding-top:20px;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .article-home__heading {
-    width: 90%;
-
+  width: 90%;
 }
-

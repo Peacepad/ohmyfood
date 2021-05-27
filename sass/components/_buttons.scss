@@ -1,91 +1,97 @@
 .btn {
-    @include flex-row;
-    cursor: pointer;
+  @include flex-row;
+  cursor: pointer;
 }
 
 .awesome-btn {
-    height: 50px;
-    background: linear-gradient(162deg, $color-secondary 0%, $color-primary 76%); //à ajuster
-    box-shadow: -2px 0px 4px rgb(190, 190, 190), 2px 4px 4px rgb(190, 190, 190);
-    color:white;
-    border-radius: 25px;
-    transform: scale(1);
-    transition: transform 200ms cubic-bezier(.39,-0.48,.41,1.57);
-    position: relative;
-    z-index:1;
-    &:hover {
-        transform: scale(1.2);
-    }
+  height: 50px;
+  background: linear-gradient(
+    162deg,
+    $color-secondary 0%,
+    $color-primary 76%
+  ); //à ajuster
+  box-shadow: -2px 0px 4px rgb(190, 190, 190), 2px 4px 4px rgb(190, 190, 190);
+  color: white;
+  border-radius: 25px;
+  transform: scale(1);
+  transition: transform 200ms cubic-bezier(0.39, -0.48, 0.41, 1.57);
+  position: relative;
+  z-index: 1;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
-
 .awesome-btn::after {
-    position: absolute;
-    content: "";
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
-    background: linear-gradient(162deg, rgba(232,114,218,1) 0%, rgba(167,93,219,1) 94%);
-    box-shadow: -3px 1px 4px rgb(190, 190, 190), 3px 5px 4px rgb(190, 190, 190);
-    border-radius: 25px;
-    z-index: -1;
-    opacity:0;
-    transition: opacity 800ms 100ms;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    162deg,
+    rgba(232, 114, 218, 1) 0%,
+    rgba(167, 93, 219, 1) 94%
+  );
+  box-shadow: -3px 1px 4px rgb(190, 190, 190), 3px 5px 4px rgb(190, 190, 190);
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 800ms 100ms;
 }
 
 .awesome-btn:hover::after {
-    opacity:1;
+  opacity: 1;
 }
-
 
 //--------------------------------------main-home_btn
 
 .main-home__btn {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 //-----------------------------------nav-home__button----------------------
 
 .nav-home__btn {
-    cursor: default;
-    display: flex;
-    position: relative;
-    justify-content: left;
-    align-items: center;
-    height:75px;
-    width: 100%;
-    @media screen and (min-width: 576px){
-        width: 80%;
-    }
-    @media screen and (min-width: 992px){
-        width: 30%;
-    }
-    background-color: $back-color;
-    border-radius: 15px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    box-shadow: -2px 0px 4px rgba(236, 236, 236, 1), 2px 4px 4px rgba(236, 236, 236, 1);
-    & i {
-        color: #7e7e7e;
-        margin-left: 32.5px;
-        margin-right: 25px;
-    }
+  cursor: default;
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  @media screen and (min-width: 576px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 30%;
+  }
+  background-color: $back-color;
+  border-radius: 15px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  box-shadow: -2px 0px 4px rgba(236, 236, 236, 1),
+    2px 4px 4px rgba(236, 236, 236, 1);
+  & i {
+    color: #7e7e7e;
+    margin-left: 32.5px;
+    margin-right: 25px;
+  }
 }
 
 .nav-home__btn:hover {
-    background-color: lighten($color-primary,35);
-    & i {
-        color:$color-primary;
-    }
+  background-color: lighten($color-primary, 35);
+  & i {
+    color: $color-primary;
+  }
 }
 
 //------------------------main-menu_btn
 
 .main-menu__btn {
-    margin-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-

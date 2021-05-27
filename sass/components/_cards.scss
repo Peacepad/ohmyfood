@@ -8,6 +8,7 @@
     }
     @media screen and (min-width: 992px){
         width: 40%;
+        margin-bottom: 40px;
         transition: transform 400ms cubic-bezier(.39,-0.48,.41,1.57);
         &:hover {
             transform: scale(1.05);
@@ -34,6 +35,9 @@
     @media screen and (min-width: 576px){
         height:190px;
     }
+    @media screen and (min-width: 992px){
+        height:240px;
+    }
     object-fit: cover;
     object-position: 0 60%;
     border-top-left-radius: 15px;
@@ -52,6 +56,7 @@
     background-color: $color-tertiary;
     color: darken($color-tertiary,40);
     box-shadow: -4px 0px 2px rgba($color-tertiary ,0.4);
+    border-radius: 3px;
 }
 
 
