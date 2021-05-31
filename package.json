@@ -1,10 +1,10 @@
 {
   "name": "pierreantoinedelamare_3_20052021",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch sass/main.scss:css/style.css"
+    
   },
   "repository": {
     "type": "git",
@@ -12,8 +12,10 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist":"last 4 versions",
   "bugs": {
     "url": "https://github.com/Peacepad/pierreantoinedelamare_3_20052021/issues"
   },
-  "homepage": "https://github.com/Peacepad/pierreantoinedelamare_3_20052021#readme"
+  "homepage": "https://github.com/Peacepad/pierreantoinedelamare_3_20052021#readme",
+  "description": ""
 }

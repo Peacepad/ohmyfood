@@ -59,13 +59,13 @@
   color: white;
   font-size: 1.4em;
   transform-origin: right;
-  transition: transform 400ms;
+  transition: transform 400ms; //agrandissement
 }
 
 .main-menu__choice i {
   display: block;
-  transform: rotate(-90deg);
-  transition: transform 400ms 0.1s;
+  transform: rotate(90deg);
+  transition: transform 400ms 0.1s; //Effet qui tourne
 }
 
 .main-menu__choice:hover {
