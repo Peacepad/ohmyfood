@@ -15,7 +15,12 @@
 }
 
 .like--checked {
-  color: $color-secondary;
+  background: linear-gradient(180deg, rgba(147,86,220,1) 11%, rgba(255,121,218,1) 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
   position: absolute;
   @include coeur(19px, 9px, 1.5em);
   z-index: 0;

@@ -64,7 +64,10 @@ a {
     animation-delay: 250ms; }
 
 .like--checked {
-  color: #ff79da;
+  background: linear-gradient(180deg, #9356dc 11%, #ff79da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   position: absolute;
   right: 19px;
   top: 9px;
@@ -653,19 +656,19 @@ footer i {
     transform: rotate(-45deg); } }
 @keyframes goutte {
   48% {
-    transform: translate(2.7px, -59px); }
+    transform: translate(8.1px, -59px); }
   49% {
-    transform: translate(3px, -60px); }
+    transform: translate(9px, -60px); }
   50% {
-    transform: translate(3.3px, -3559) scale(1, 1); }
+    transform: translate(9.9px, -3559) scale(1, 1); }
   51% {
-    transform: translate(3.6px, -58px) scale(0.5, 2); }
+    transform: translate(10.8px, -58px) scale(0.5, 2); }
   75% {
-    transform: translate(6px, 15px) scale(1, 1);
+    transform: translate(18px, 15px) scale(1, 1);
     z-index: 2;
     opacity: 1; }
   100% {
-    transform: translate(6px, 16px) scale(2, 0.5);
+    transform: translate(18px, 16px) scale(2, 0.5);
     z-index: -2;
     opacity: 0; } }
 @keyframes liquide-coule {
